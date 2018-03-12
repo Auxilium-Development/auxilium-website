@@ -24,6 +24,12 @@
 	body {
 		line-height: 1;
 	}
+	#particles-js
+	{
+		height: 300px;
+		width: 222px;
+		background: #f00;
+	}
 
 	ol, ul {
 		list-style: none;
