@@ -18,7 +18,6 @@ var pJS = function(tag_id, params){
       w: canvas_el.offsetWidth,
       h: canvas_el.offsetHeight
     },
-   
   "particles": {
     "number": {
       "value": 66,
