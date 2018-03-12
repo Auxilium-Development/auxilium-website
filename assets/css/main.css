@@ -25,11 +25,6 @@
 		line-height: 1;
 	}
 
-	canvas {
-  		display: block;
-  		vertical-align: bottom;
-	}
-
 	ol, ul {
 		list-style: none;
 	}
