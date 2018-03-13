@@ -1,0 +1,8 @@
+# logs
+*.logs
+
+# Visual Studio Code workspace settings
+.vscode
+
+# MacOS Folder Structure
+**/.DS_Store
