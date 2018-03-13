@@ -1,0 +1,40 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Website for m4cs development",
+  "author": "M4cs-Development",
+  "license": "MIT",
+  "homepage": "http://m4cs.xyz",
+  "private": false,
+  "scripts": {
+    "prestart": "yarn install",
+    "start": "http-server . -a localhost -p 4455 -c-1 -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M4cs-Development/m4cs.git"
+  },
+  "keywords": [
+    "web",
+    "homepage"
+  ],
+  "engines": {
+    "node": ">=8.0.0 <9.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-animate": "^1.6.9",
+    "angular-aria": "^1.6.9",
+    "angular-material": "^1.1.7",
+    "angular-messages": "^1.6.9",
+    "angular-scroll": "^1.0.2",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "moment": "^2.21.0",
+    "popper.js": "^1.14.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-plugin-node": "^6.0.1"
+  }
+}

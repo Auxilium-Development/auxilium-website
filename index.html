@@ -1,202 +1,95 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!--
+*   Copyright (C) 2018 M4cs Development
+*
+*   Permission is hereby granted, free of charge, to any person obtaining
+*   a copy of this software and associated documentation files (the
+*   "Software"), to deal in the Software without restriction, including
+*   without limitation the rights to use, copy, modify, merge, publish,
+*   distribute, sublicense, and/or sell copies of the Software, and to
+*   permit persons to whom the Software is furnished to do so, subject
+*   to the following conditions:
+*
+*   The above copyright notice and this permission notice shall be included
+*   in all copies or substantial portions of the Software.
+*
+*   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+*   OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+*   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+*   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+*   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+*   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<!DOCTYPE html>
+<html lang="en" ng-app="modularM4cs">
 
 <head>
-	<title>M4cs Developments</title>
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Website for the M4cs Development team">
-	<meta name="keywords" content="ios, controlcenter, tweak, cydia, jailbreak, m4cs">
-	<meta name="robots" content="index, follow" />
-	<meta name="author" content="M4cs Development" />
+    <title>M4cs Development</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for the M4cs Development team">
+    <meta name="keywords" content="ios, controlcenter, tweak, cydia, jailbreak, m4cs">
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="M4cs Development" />
+    <base href="/">
 
-	<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/font-faces.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/design.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" media="screen" type="text/css" />
 
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-	<link rel="manifest" href="assets/images/favicons/site.webmanifest">
-	<link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#1a1a1a">
-	<link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
-	<meta name="apple-mobile-web-app-title" content="M4cs Development">
-	<meta name="application-name" content="M4cs Development">
-	<meta name="msapplication-TileColor" content="#1a1a1a">
-	<meta name="msapplication-config" content="assets/images/favicons/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
+    <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="node_modules/angular/angular.min.js" type="text/javascript"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js" type="text/javascript"></script>
+    <script src="node_modules/angular-aria/angular-aria.min.js" type="text/javascript"></script>
+    <script src="node_modules/angular-material/angular-material.min.js" type="text/javascript"></script>
+    <script src="node_modules/angular-messages/angular-messages.min.js" type="text/javascript"></script>
+    <script src="node_modules/angular-scroll/angular-scroll.min.js" type="text/javascript"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
 
-	<meta property="og:image" content="http://m4cs.xyz/assets/images/og-image.jpg">
-	<meta property="og:image:type" content="image/jpg">
-	<meta property="og:image:alt" content="Fancy social share image">
-	<meta property="og:image:height" content="241">
-	<meta property="og:image:width" content="460">
-	<meta property="og:description" content="Website for the M4cs Development team">
-	<meta property="og:title" content="M4cs Development">
-	<meta property="og:url" content="http://m4cs.xyz/">
-	<meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#1a1a1a">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="M4cs Development">
+    <meta name="application-name" content="M4cs Development">
+    <meta name="msapplication-TileColor" content="#1a1a1a">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@M4csDev">
-	<meta name="twitter:title" content="M4cs Development">
-	<meta name="twitter:description" content="Website for the M4cs Development team">
-	<meta name="twitter:image" content="http://m4cs.xyz/assets/images/og-image.jpg">
-	<meta name="twitter:image:alt" content="socialshareimage">
+    <meta property="og:image" content="http://m4cs.xyz/images/og-image.jpg">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:alt" content="Fancy social share image">
+    <meta property="og:image:height" content="241">
+    <meta property="og:image:width" content="460">
+    <meta property="og:description" content="Website for the M4cs Development team">
+    <meta property="og:title" content="M4cs Development">
+    <meta property="og:url" content="http://m4cs.xyz/">
+    <meta property="og:type" content="website">
 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@M4csDev">
+    <meta name="twitter:title" content="M4cs Development">
+    <meta name="twitter:description" content="Website for the M4cs Development team">
+    <meta name="twitter:image" content="http://m4cs.xyz/images/og-image.jpg">
+    <meta name="twitter:image:alt" content="socialshareimage">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 
-<body class="landing">
-	<div id="page-wrapper">
+<body ng-controller="siteCtrl">
+    <h1>Hello World!</h1>
+    <h2>Angular check, this should say "placeholder": {{placeholder}}</h2>
 
-		<!-- Header -->
-		<header id="header">
-			<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-			<h1 id="logo">
-				<a href="index.html">M4CS</a>
-			</h1>
-			<nav id="nav">
-				<ul>
-					<li>
-						<a target="_blank" href="https://discord.gg/RyCRfxS" class="button">
-							<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-							<i class="fab fa-discord"></i> DISCORD</a>
-					</li>
-					<li>
-						<a target="_blank" href="cydia://url/https://cydia.saurik.com/api/share#?source=http://repo.m4cs.xyz" class="button">
-							<i class="fa fa-external-link-alt"></i> REPO</a>
-					</li>
-					<li>
-						<a target="_blank" href="http://paypal.me/m4csdevelopment" class="button special">
-							<i class="fab fa-paypal"></i> DONATE</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-
-		<!-- Banner -->
-		<section id="banner">
-			<div class="content">
-				<header>
-					<h2>bringing ease to your device</h2>
-					<ul class="copyright">
-						<i>iOS 11-11.1.2</i>
-					</ul>
-				</header>
-				<br>
-				<div align="center"></div>
-
-			</div>
-			<a href="#devs" class="goto-next scrolly"></a>
-		</section>
-
-		<!-- Four -->
-		<section id="devs" class="wrapper style1 special fade-up">
-			<div class="container">
-				<header class="major">
-					<h2>DEVELOPERS</h2>
-				</header>
-				<div class="box alt">
-					<div class="row uniform">
-						<section class="4u 6u(medium) 12u$(xsmall)">
-						</section>
-						<section class="4u 6u(medium) 12u$(xsmall)">
-							<span class="icon alt major fa-terminal"></span>
-							<h3>Macs</h3>
-							<p>Owner of M4cs Development team.
-								<br> Up and coming developer in Obj-C and Swift.</p>
-						</section>
-						<section class="4u 6u(medium) 12u$(xsmall)">
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-						</section>
-						<section class="4u 6u(medium) 12u$(xsmall)">
-							<span class="icon alt major fa-terminal"></span>
-							<h3>Simalary</h3>
-							<p>iOS Jailbreak Tweak & App Developer
-								<br> Lead Development Member & iOS Team Leader
-								<br> http://github.com/Simalary
-							</p>
-						</section>
-						<section class="4u 6u$(medium) 12u$(xsmall)">
-							<span class="icon alt major fa-terminal"></span>
-							<h3>Chilaxan</h3>
-							<p>Did something.</p>
-						</section>
-						<section class="4u$ 6u(medium) 12u$(xsmall)">
-							<span class="icon alt major fa-terminal"></span>
-							<h3>MidnightChips</h3>
-							<p>Dev of ext3nder-installer for iOS 11.
-								<br> Self proclaimed idiot.
-								<br> Lead Development member</p>
-						</section>
-						<section class="4u 6u(medium) 12u$(xsmall)">
-						</section>
-						<section class="4u 6u(medium) 12u$(xsmall)">
-							<span class="icon alt major fa-code"></span>
-							<h3>Aidan</h3>
-							<p>Web design</p>
-						</section>
-					</div>
-				</div>
-				<footer class="major">
-				</footer>
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-			<ul class="icons">
-				<li>
-					<a target="_blank" href="http://www.github.com/M4cs" class="icon fa-github">
-						<span class="label">GitHub</span>
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://reddit.com/u/thecoderkiller" class="icon fa-reddit">
-						<span class="label">GitHub</span>
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://paypal.me/m4csdevelopment" class="icon fa-paypal">
-						<span class="label">PayPal</span>
-					</a>
-				</li>
-			</ul>
-			<a target="_blank" href="https://discord.gg/RyCRfxS" class="button small">
-				<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-				<i class="fab fa-discord"></i> DISCORD</a>
-			<br>
-			<br>
-			<a target="_blank" href="cydia://url/https://cydia.saurik.com/api/share#?source=http://repo.m4cs.xyz" class="button small">
-				<i class="fa fa-external-link-alt"></i> REPO</a>
-
-
-			<ul class="copyright">
-				<li>M4CS DEVELOPMENTS</li>
-			</ul>
-		</footer>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/skel.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</div>
+    <script src="scripts/app.js" type="text/javascript"></script>
+    <script src="scripts/siteController.js" type="text/javascript"></script>
 </body>
 
 </html>
