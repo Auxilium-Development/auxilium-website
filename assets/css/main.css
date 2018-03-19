@@ -1654,7 +1654,6 @@
 		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-bottom:;
 		color: #7a9fff;
 		text-decoration: none;
 	}
