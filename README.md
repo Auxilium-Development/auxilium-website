@@ -2,7 +2,7 @@
 
 This is the repository for the Auxilium Developments Website. Please visit the website by clicking the button below:
 
-[Auxilium Developments Website](http://http://auxiliumdev.com// "Auxilium Developments Website")|
+[Auxilium Developments Website](http://auxiliumdev.com// "Auxilium Developments Website")|
 :--|
 
 ## Buy us some starbucks
